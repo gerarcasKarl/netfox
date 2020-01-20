@@ -32,6 +32,11 @@ fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     public var requestBodyLength: Int?
     @objc public var requestType: String?
     @objc public var requestCurl: String?
+    
+    //Additional Encryption row for the Request Tab below the Body
+    public var requestEncryptionLength: Int?
+    @objc public var requestEncryptionType: String?
+    @objc public var requestEncryptionCurl: String?
 
     public var responseStatus: Int?
     @objc public var responseType: String?
@@ -39,6 +44,9 @@ fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     @objc public var responseTime: String?
     @objc public var responseHeaders: [AnyHashable: Any]?
     public var responseBodyLength: Int?
+    
+    //Additional Encryption row for the Response Tab below the Body
+    public var responseEncryptionLength: Int?
     
     public var timeInterval: Float?
     

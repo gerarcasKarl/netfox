@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		026274D9214C6BC400AE1BDF /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026274D8214C6BC400AE1BDF /* WKWebViewController.swift */; };
+		0FC0C9D4C591678D2DAC0072 /* Pods_netfox_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705216B3C85F18DCAEF75CAA /* Pods_netfox_ios.framework */; };
 		3708AD5A22D4A9DD0050DB7D /* NFXURLDetailsControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3708AD5922D4A9DD0050DB7D /* NFXURLDetailsControllerViewController.swift */; };
 		8201A39D204E3E3F00AB2C3D /* NFXAuthenticationChallengeSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8201A39C204E3E3F00AB2C3D /* NFXAuthenticationChallengeSender.swift */; };
 		8201A39E204E451900AB2C3D /* NFXAuthenticationChallengeSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8201A39C204E3E3F00AB2C3D /* NFXAuthenticationChallengeSender.swift */; };
@@ -22,6 +23,7 @@
 		826C4E9F1F979AB3008B440C /* NFXLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 826C4E9D1F979AB3008B440C /* NFXLoader.m */; };
 		82F6E1031F8FD81C002B31BD /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F6E1021F8FD81C002B31BD /* TextViewController.swift */; };
 		82F6E1051F8FF55D002B31BD /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F6E1041F8FF55D002B31BD /* WebViewController.swift */; };
+		AC9C29D9B7B52956D4417BDB /* Pods_netfox_ios_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3540731B351DC4AFA807EB9 /* Pods_netfox_ios_demo.framework */; };
 		B3F8BA821C833ABC00F9FBEA /* NFX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F8BA711C833ABC00F9FBEA /* NFX.swift */; };
 		B3F8BA831C833ABC00F9FBEA /* NFX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F8BA711C833ABC00F9FBEA /* NFX.swift */; };
 		B3F8BA841C833ABC00F9FBEA /* NFXAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F8BA721C833ABC00F9FBEA /* NFXAssets.swift */; };
@@ -73,6 +75,7 @@
 		B3F8D6821C833B1700F9FBEA /* NFXResponseTypeCell_OSX.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3F8D6781C833B1700F9FBEA /* NFXResponseTypeCell_OSX.xib */; };
 		B3F8D6831C833B1700F9FBEA /* NFXSettingsController_OSX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F8D6791C833B1700F9FBEA /* NFXSettingsController_OSX.swift */; };
 		B3F8D6841C833B1700F9FBEA /* NFXStatisticsController_OSX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F8D67A1C833B1700F9FBEA /* NFXStatisticsController_OSX.swift */; };
+		BD05A7B01431085C4ED93AB8 /* Pods_netfox_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449F4A16DDDF8AAA13400EFE /* Pods_netfox_osx.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,12 @@
 /* Begin PBXFileReference section */
 		026274D8214C6BC400AE1BDF /* WKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
 		3708AD5922D4A9DD0050DB7D /* NFXURLDetailsControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXURLDetailsControllerViewController.swift; sourceTree = "<group>"; };
+		449F4A16DDDF8AAA13400EFE /* Pods_netfox_osx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_netfox_osx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		568B02FA441C53FFD03F6BAD /* Pods-netfox_ios_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netfox_ios_demo.release.xcconfig"; path = "Target Support Files/Pods-netfox_ios_demo/Pods-netfox_ios_demo.release.xcconfig"; sourceTree = "<group>"; };
+		58F6130E11A2CD43DF14A0F6 /* Pods-netfox_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netfox_ios.debug.xcconfig"; path = "Target Support Files/Pods-netfox_ios/Pods-netfox_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		6829B948C9A264B498686F30 /* Pods-netfox_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netfox_ios.release.xcconfig"; path = "Target Support Files/Pods-netfox_ios/Pods-netfox_ios.release.xcconfig"; sourceTree = "<group>"; };
+		70264017B213EE78F1CD33BF /* Pods-netfox_osx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netfox_osx.release.xcconfig"; path = "Target Support Files/Pods-netfox_osx/Pods-netfox_osx.release.xcconfig"; sourceTree = "<group>"; };
+		705216B3C85F18DCAEF75CAA /* Pods_netfox_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_netfox_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8201A39C204E3E3F00AB2C3D /* NFXAuthenticationChallengeSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFXAuthenticationChallengeSender.swift; sourceTree = "<group>"; };
 		8229AD621F8FB34300A9D613 /* netfox_ios_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = netfox_ios_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8229AD641F8FB34300A9D613 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +109,8 @@
 		826C4E9D1F979AB3008B440C /* NFXLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFXLoader.m; sourceTree = "<group>"; };
 		82F6E1021F8FD81C002B31BD /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		82F6E1041F8FF55D002B31BD /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		A27C83DB81F7D2C5A9DADE38 /* Pods-netfox_ios_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netfox_ios_demo.debug.xcconfig"; path = "Target Support Files/Pods-netfox_ios_demo/Pods-netfox_ios_demo.debug.xcconfig"; sourceTree = "<group>"; };
+		A3540731B351DC4AFA807EB9 /* Pods_netfox_ios_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_netfox_ios_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3BC020F1C09CDA000C17F3A /* netfox_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = netfox_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F8BA711C833ABC00F9FBEA /* NFX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFX.swift; sourceTree = "<group>"; };
 		B3F8BA721C833ABC00F9FBEA /* NFXAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXAssets.swift; sourceTree = "<group>"; };
@@ -135,6 +146,7 @@
 		B3F8D6781C833B1700F9FBEA /* NFXResponseTypeCell_OSX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NFXResponseTypeCell_OSX.xib; sourceTree = "<group>"; };
 		B3F8D6791C833B1700F9FBEA /* NFXSettingsController_OSX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXSettingsController_OSX.swift; sourceTree = "<group>"; };
 		B3F8D67A1C833B1700F9FBEA /* NFXStatisticsController_OSX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXStatisticsController_OSX.swift; sourceTree = "<group>"; };
+		D162D1AEF5191B36F6CD5F28 /* Pods-netfox_osx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netfox_osx.debug.xcconfig"; path = "Target Support Files/Pods-netfox_osx/Pods-netfox_osx.debug.xcconfig"; sourceTree = "<group>"; };
 		E20FD2E91C6912D400DCFF61 /* netfox_osx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = netfox_osx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -144,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8229AD771F8FB4B500A9D613 /* netfox_ios.framework in Frameworks */,
+				AC9C29D9B7B52956D4417BDB /* Pods_netfox_ios_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FC0C9D4C591678D2DAC0072 /* Pods_netfox_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD05A7B01431085C4ED93AB8 /* Pods_netfox_osx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +198,9 @@
 		8229AD761F8FB4B500A9D613 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				705216B3C85F18DCAEF75CAA /* Pods_netfox_ios.framework */,
+				A3540731B351DC4AFA807EB9 /* Pods_netfox_ios_demo.framework */,
+				449F4A16DDDF8AAA13400EFE /* Pods_netfox_osx.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -194,6 +212,7 @@
 				8229AD631F8FB34300A9D613 /* netfox_ios_demo */,
 				B3BC02101C09CDA000C17F3A /* Products */,
 				8229AD761F8FB4B500A9D613 /* Frameworks */,
+				C8E2EE7C476FF9EA1E524072 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,6 +285,20 @@
 			path = OSX;
 			sourceTree = "<group>";
 		};
+		C8E2EE7C476FF9EA1E524072 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58F6130E11A2CD43DF14A0F6 /* Pods-netfox_ios.debug.xcconfig */,
+				6829B948C9A264B498686F30 /* Pods-netfox_ios.release.xcconfig */,
+				A27C83DB81F7D2C5A9DADE38 /* Pods-netfox_ios_demo.debug.xcconfig */,
+				568B02FA441C53FFD03F6BAD /* Pods-netfox_ios_demo.release.xcconfig */,
+				D162D1AEF5191B36F6CD5F28 /* Pods-netfox_osx.debug.xcconfig */,
+				70264017B213EE78F1CD33BF /* Pods-netfox_osx.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CEFE42B41C0DDBD8001A56E0 /* netfox */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,9 +334,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8229AD711F8FB34300A9D613 /* Build configuration list for PBXNativeTarget "netfox_ios_demo" */;
 			buildPhases = (
+				73F05DFFF08649BCBC075207 /* [CP] Check Pods Manifest.lock */,
 				8229AD5E1F8FB34300A9D613 /* Sources */,
 				8229AD5F1F8FB34300A9D613 /* Frameworks */,
 				8229AD601F8FB34300A9D613 /* Resources */,
+				31F6F3C9DD54A1E556565851 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -319,6 +354,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3BC02171C09CDA000C17F3A /* Build configuration list for PBXNativeTarget "netfox_ios" */;
 			buildPhases = (
+				387DD009D36ADC29B0C1E2C3 /* [CP] Check Pods Manifest.lock */,
 				B3BC020A1C09CDA000C17F3A /* Sources */,
 				B3BC020B1C09CDA000C17F3A /* Frameworks */,
 				B3BC020C1C09CDA000C17F3A /* Headers */,
@@ -337,6 +373,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E20FD2F01C6912D400DCFF61 /* Build configuration list for PBXNativeTarget "netfox_osx" */;
 			buildPhases = (
+				AF57F878517EBC942330AEE2 /* [CP] Check Pods Manifest.lock */,
 				E20FD2E41C6912D400DCFF61 /* Sources */,
 				E20FD2E51C6912D400DCFF61 /* Frameworks */,
 				E20FD2E61C6912D400DCFF61 /* Headers */,
@@ -425,6 +462,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31F6F3C9DD54A1E556565851 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-netfox_ios_demo/Pods-netfox_ios_demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-netfox_ios_demo/Pods-netfox_ios_demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		387DD009D36ADC29B0C1E2C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-netfox_ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73F05DFFF08649BCBC075207 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-netfox_ios_demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF57F878517EBC942330AEE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-netfox_osx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8229AD5E1F8FB34300A9D613 /* Sources */ = {
@@ -538,6 +666,7 @@
 /* Begin XCBuildConfiguration section */
 		8229AD721F8FB34300A9D613 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A27C83DB81F7D2C5A9DADE38 /* Pods-netfox_ios_demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -567,6 +696,7 @@
 		};
 		8229AD731F8FB34300A9D613 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 568B02FA441C53FFD03F6BAD /* Pods-netfox_ios_demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -707,6 +837,7 @@
 		};
 		B3BC02181C09CDA000C17F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58F6130E11A2CD43DF14A0F6 /* Pods-netfox_ios.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -729,6 +860,7 @@
 		};
 		B3BC02191C09CDA000C17F3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6829B948C9A264B498686F30 /* Pods-netfox_ios.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -750,6 +882,7 @@
 		};
 		E20FD2EE1C6912D400DCFF61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D162D1AEF5191B36F6CD5F28 /* Pods-netfox_osx.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -779,6 +912,7 @@
 		};
 		E20FD2EF1C6912D400DCFF61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70264017B213EE78F1CD33BF /* Pods-netfox_osx.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";

@@ -34,7 +34,7 @@ class NFXDetailsController: NFXGenericController {
         case info
         case request
         case response
-        case encrypted
+//        case encrypted
     }
 
     override func viewDidLoad() {
@@ -80,12 +80,14 @@ class NFXDetailsController: NFXGenericController {
         
     #if os(iOS)
         tempString += getRequestBodyStringFooter(object)
+        tempString += getRequestEncryptionStringFooter(object)
     #endif
         return formatNFXString(tempString)
     }
 
     func getRequestBodyStringFooter(_ object: NFXHTTPModel) -> String {
         var tempString = "\n-- Body --\n\n"
+        
         if (object.requestBodyLength == 0) {
             tempString += "Request body is empty\n"
         } else if (object.requestBodyLength > 1024) {
@@ -93,6 +95,23 @@ class NFXDetailsController: NFXGenericController {
         } else {
             tempString += "\(object.getRequestBody())\n"
         }
+        return tempString
+    }
+    
+    func getRequestEncryptionStringFooter(_ object: NFXHTTPModel) -> String {
+        
+        let toEncode = object.getRequestBody() as String
+        let encodedString = toEncode.toBase64()
+        
+        var tempString = "\n-- Encrypted Body --\n\n"
+        if (object.requestEncryptionLength == 0) {
+            tempString += "Request Encryption is empty\n"
+        } else if (object.requestEncryptionLength > 1024) {
+            tempString += "Too long to show. If you want to see it, please tap the following button\n"
+        } else {
+            tempString += "\(encodedString)\n"
+        }
+        
         return tempString
     }
     
@@ -118,6 +137,7 @@ class NFXDetailsController: NFXGenericController {
         
     #if os(iOS)
         tempString += getResponseBodyStringFooter(object)
+        tempString += getResponseEncryptionStringFooter(object)
     #endif
         return formatNFXString(tempString)
     }
@@ -134,27 +154,40 @@ class NFXDetailsController: NFXGenericController {
         return tempString
     }
     
-    
-    func getEncryptedStringFromObject(_ object: NFXHTTPModel) -> NSAttributedString
-    {
-        var tempString: String
-        tempString = String()
+    func getResponseEncryptionStringFooter(_ object: NFXHTTPModel) -> String {
         
-//        var toEncode: String
-//        var encodedString: String
-//        var decodedString: String
-        
-        tempString += "ENCRYPTED RESPONSE \n\n"
         let toEncode = object.getResponseBody() as String
         let encodedString = toEncode.toBase64()
-        tempString += "\(encodedString)\n\n\n\n"
         
-        let decodedString = encodedString.fromBase64()!
-        tempString += "DECRYPTED RESPONSE \n\n"
-        tempString += "\(decodedString)\n\n"
+        var tempString = "\n-- Encrypted Body --\n\n"
+        if (object.responseEncryptionLength == 0) {
+            tempString += "Response Encryption is empty\n"
+        } else if (object.responseEncryptionLength > 1024) {
+            tempString += "Too long to show. If you want to see it, pelase tap the following button\n"
+        } else {
+            tempString += "\(encodedString)\n\n"
+        }
         
-        return formatNFXString(tempString)
+        return tempString
     }
+    
+    
+//    func getEncryptedStringFromObject(_ object: NFXHTTPModel) -> NSAttributedString
+//    {
+//        var tempString: String
+//        tempString = String()
+//
+//        tempString += "ENCRYPTED RESPONSE \n\n"
+//        let toEncode = object.getResponseBody() as String
+//        let encodedString = toEncode.toBase64()
+//        tempString += "\(encodedString)\n\n\n\n"
+//
+//        let decodedString = encodedString.fromBase64()!
+//        tempString += "DECRYPTED RESPONSE \n\n"
+//        tempString += "\(decodedString)\n\n"
+//
+//        return formatNFXString(tempString)
+//    }
 }
 
 
