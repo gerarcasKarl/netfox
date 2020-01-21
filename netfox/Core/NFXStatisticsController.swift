@@ -37,6 +37,10 @@ class NFXStatisticsController: NFXGenericController
     var totalRequestSize: Int = 0
     var totalResponseSize: Int = 0
     
+    //for encryption data
+    var totalEncryptionRequestSize: Int = 0
+    var totalEncryptionResponseSize: Int = 0
+    
     var totalResponseTime: Float = 0
     
     var fastestResponseTime: Float = 999
@@ -103,6 +107,15 @@ class NFXStatisticsController: NFXGenericController
                 totalResponseSize += model.responseBodyLength!
             }
             
+            //length for encryption request and response
+            if (model.requestEncryptionLength != nil) {
+                totalEncryptionRequestSize += model.requestEncryptionLength!
+            }
+            if (model.responseEncryptionLength != nil) {
+                totalEncryptionResponseSize += model.responseEncryptionLength!
+            }
+            ///
+            
             if (model.timeInterval != nil) {
                 totalResponseTime += model.timeInterval!
                 
@@ -127,6 +140,9 @@ class NFXStatisticsController: NFXGenericController
         self.totalResponseTime = 0
         self.fastestResponseTime = 999
         self.slowestResponseTime = 0
+        
+        self.totalEncryptionRequestSize = 0
+        self.totalEncryptionResponseSize = 0
     }
     
     override func reloadData()

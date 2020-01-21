@@ -43,16 +43,13 @@ class NFXDetailsController_iOS: NFXDetailsController, MFMailComposeViewControlle
     var infoView: UIScrollView = UIScrollView()
     var requestView: UIScrollView = UIScrollView()
     var responseView: UIScrollView = UIScrollView()
-//    var encryptedView: UIScrollView = UIScrollView()
 
     private lazy var headerButtons: [UIButton] = {
         return [self.infoButton, self.requestButton, self.responseButton]
-//        return [self.infoButton, self.requestButton, self.responseButton, self.encryptedButton]
     }()
 
     private lazy var infoViews: [UIScrollView] = {
         return [self.infoView, self.requestView, self.responseView]
-//        return [self.infoView, self.requestView, self.responseView, self.encryptedView]
     }()
 
     internal var sharedContent: String?
@@ -70,7 +67,6 @@ class NFXDetailsController_iOS: NFXDetailsController, MFMailComposeViewControlle
         self.infoButton = createHeaderButton("Info", x: 0, selector: #selector(NFXDetailsController_iOS.infoButtonPressed))
         self.requestButton = createHeaderButton("Request", x: self.infoButton.frame.maxX, selector: #selector(NFXDetailsController_iOS.requestButtonPressed))
         self.responseButton = createHeaderButton("Response", x: self.requestButton.frame.maxX, selector: #selector(NFXDetailsController_iOS.responseButtonPressed))
-//        self.encryptedButton = createHeaderButton("Encryption", x: self.responseButton.frame.maxX, selector: #selector(NFXDetailsController_iOS.encryptedButtonPressed))
         self.headerButtons.forEach { self.view.addSubview($0) }
 
         // Info views
@@ -96,7 +92,6 @@ class NFXDetailsController_iOS: NFXDetailsController, MFMailComposeViewControlle
     {
         var tempButton: UIButton
         tempButton = UIButton()
-//        tempButton.frame = CGRect(x: x, y: 0, width: self.view.frame.width / 4, height: 44)
         tempButton.frame = CGRect(x: x, y: 0, width: self.view.frame.width / 3, height: 44)
         tempButton.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleWidth]
         tempButton.backgroundColor = UIColor.NFXDarkStarkWhiteColor()
@@ -227,11 +222,6 @@ class NFXDetailsController_iOS: NFXDetailsController, MFMailComposeViewControlle
     {
         buttonPressed(self.responseButton)
     }
-    
-//    @objc func encryptedButtonPressed()
-//    {
-//        buttonPressed(self.encryptedButton)
-//    }
 
     @objc func handleSwipe(_ gesture: UISwipeGestureRecognizer) {
         guard let currentButtonIdx = headerButtons.firstIndex(where: { $0.isSelected }) else { return }
@@ -252,7 +242,6 @@ class NFXDetailsController_iOS: NFXDetailsController, MFMailComposeViewControlle
     {
         guard let selectedButtonIdx = self.headerButtons.firstIndex(of: sender) else { return }
         let infoViews = [self.infoView, self.requestView, self.responseView]
-//        let infoViews = [self.infoView, self.requestView, self.responseView, self.encryptedView]
 
         UIView.animate(withDuration: 0.4,
                        delay: 0.0,
@@ -310,9 +299,6 @@ class NFXDetailsController_iOS: NFXDetailsController, MFMailComposeViewControlle
 
         tempString += "** RESPONSE **\n"
         tempString += "\(getResponseStringFromObject(self.selectedModel).string)\n\n"
-        
-//        tempString += "** ENCRYPTED **\n"
-//        tempString += "\(getEncryptedStringFromObject(self.selectedModel).string)\n\n"
 
         tempString += "logged via netfox - [https://github.com/kasketis/netfox] (via gerarcasKarl)\n"
 

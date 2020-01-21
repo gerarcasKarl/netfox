@@ -34,7 +34,6 @@ class NFXDetailsController: NFXGenericController {
         case info
         case request
         case response
-//        case encrypted
     }
 
     override func viewDidLoad() {
@@ -144,6 +143,7 @@ class NFXDetailsController: NFXGenericController {
     
     func getResponseBodyStringFooter(_ object: NFXHTTPModel) -> String {
         var tempString = "-- Body --\n\n"
+        
         if (object.responseBodyLength == 0) {
             tempString += "Response body is empty\n"
         } else if (object.responseBodyLength > 1024) {
@@ -160,6 +160,7 @@ class NFXDetailsController: NFXGenericController {
         let encodedString = toEncode.toBase64()
         
         var tempString = "\n-- Encrypted Body --\n\n"
+        
         if (object.responseEncryptionLength == 0) {
             tempString += "Response Encryption is empty\n"
         } else if (object.responseEncryptionLength > 1024) {
@@ -171,23 +172,6 @@ class NFXDetailsController: NFXGenericController {
         return tempString
     }
     
-    
-//    func getEncryptedStringFromObject(_ object: NFXHTTPModel) -> NSAttributedString
-//    {
-//        var tempString: String
-//        tempString = String()
-//
-//        tempString += "ENCRYPTED RESPONSE \n\n"
-//        let toEncode = object.getResponseBody() as String
-//        let encodedString = toEncode.toBase64()
-//        tempString += "\(encodedString)\n\n\n\n"
-//
-//        let decodedString = encodedString.fromBase64()!
-//        tempString += "DECRYPTED RESPONSE \n\n"
-//        tempString += "\(decodedString)\n\n"
-//
-//        return formatNFXString(tempString)
-//    }
 }
 
 
