@@ -21,13 +21,15 @@ class TextViewController: UIViewController {
     @IBAction func tappedLoad(_ sender: Any) {
         dataTask?.cancel()
         
+        let testRequestBody: String = "Karl lois gerarcas"
+        
         if session == nil {
             session = URLSession(configuration: URLSessionConfiguration.default, delegate: self, delegateQueue: nil)
         }
         
         guard let url = URL(string: "https://api.chucknorris.io/jokes/random") else { return }
         var request = URLRequest(url: url)
-        request.httpBody = "Sample Username Password".data(using: .utf8)
+        request.httpBody = testRequestBody.data(using: .utf8)
         dataTask = session.dataTask(with: request) { (data, response, error) in
             if let error = error {
                 self.handleCompletion(error: error.localizedDescription, data: data)

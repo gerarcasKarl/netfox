@@ -72,6 +72,13 @@ public extension UIDevice
         case "iPhone10,1", "iPhone10,4": return "iPhone 8"
         case "iPhone10,2", "iPhone10,5": return "iPhone 8 Plus"
         case "iPhone10,3", "iPhone10,6": return "iPhone X"
+        case "iPhone11,2": return "iPhone XS"                       ///Added iPhone Versions XS to iPhone 11 Pro Max
+        case "iPhone11,4", "iPhone11,6": return "iPhone XS Max"
+        case "iPhone11,8": return "iPhone XR"
+        case "iPhone12,1": return "iPhone 11"
+        case "iPhone12,3": return "iPhone 11 Pro"
+        case "iPhone12,5": return "iPhone 11 Pro Max"
+        
             
         case "iPod1,1": return "iPodTouch 1G"
         case "iPod2,1": return "iPodTouch 2G"
@@ -79,6 +86,7 @@ public extension UIDevice
         case "iPod4,1": return "iPodTouch 4G"
         case "iPod5,1": return "iPodTouch 5G"
         case "iPod7,1": return "iPodTouch 6G"
+        case "iPod9,1": return "iPodTouch 7G"   ///Added new iPod version 7G
             
         case "iPad1,1", "iPad1,2": return "iPad"
         case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4": return "iPad 2"
@@ -94,6 +102,12 @@ public extension UIDevice
         case "iPad6,11", "iPad6,12": return "iPad 5"
         case "iPad7,1", "iPad7,2": return "iPad Pro 12.9-inch"
         case "iPad7,3", "iPad7,4": return "iPad Pro 10.5-inch"
+        case "iPad7,5", "iPad7,6": return "iPad 6"                   ///Added New Ipad versions from iPad 6 to iPad Air 3
+        case "iPad7,11", "iPad7,12": return "iPad 7 10.2-inch"
+        case "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4": return "iPad Pro 3 11-inch"
+        case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8": return "iPad Pro 3 12.9-inch"
+        case "iPad11,1", "iPad11,2": return "iPad Mini 5"
+        case "iPad11,3", "iPad11,4": return "iPad Air 3"
             
         default: return "Not Available"
         }

@@ -76,6 +76,9 @@
 		B3F8D6831C833B1700F9FBEA /* NFXSettingsController_OSX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F8D6791C833B1700F9FBEA /* NFXSettingsController_OSX.swift */; };
 		B3F8D6841C833B1700F9FBEA /* NFXStatisticsController_OSX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F8D67A1C833B1700F9FBEA /* NFXStatisticsController_OSX.swift */; };
 		BD05A7B01431085C4ED93AB8 /* Pods_netfox_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449F4A16DDDF8AAA13400EFE /* Pods_netfox_osx.framework */; };
+		BF110B3223D9A8BF007AE3EE /* AsymmetricCryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF110B3123D9A8BF007AE3EE /* AsymmetricCryptoManager.swift */; };
+		BF110B3423D9AC38007AE3EE /* AsymmetricCrypto-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = BF110B3323D9AC38007AE3EE /* AsymmetricCrypto-Bridging-Header.h */; };
+		BF110B3523D9AC38007AE3EE /* AsymmetricCrypto-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = BF110B3323D9AC38007AE3EE /* AsymmetricCrypto-Bridging-Header.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +149,8 @@
 		B3F8D6781C833B1700F9FBEA /* NFXResponseTypeCell_OSX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NFXResponseTypeCell_OSX.xib; sourceTree = "<group>"; };
 		B3F8D6791C833B1700F9FBEA /* NFXSettingsController_OSX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXSettingsController_OSX.swift; sourceTree = "<group>"; };
 		B3F8D67A1C833B1700F9FBEA /* NFXStatisticsController_OSX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXStatisticsController_OSX.swift; sourceTree = "<group>"; };
+		BF110B3123D9A8BF007AE3EE /* AsymmetricCryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsymmetricCryptoManager.swift; sourceTree = "<group>"; };
+		BF110B3323D9AC38007AE3EE /* AsymmetricCrypto-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AsymmetricCrypto-Bridging-Header.h"; path = "../../../../AsymmetricCrypto-master/AsymmetricCrypto/AsymmetricCrypto-Bridging-Header.h"; sourceTree = "<group>"; };
 		D162D1AEF5191B36F6CD5F28 /* Pods-netfox_osx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netfox_osx.debug.xcconfig"; path = "Target Support Files/Pods-netfox_osx/Pods-netfox_osx.debug.xcconfig"; sourceTree = "<group>"; };
 		E20FD2E91C6912D400DCFF61 /* netfox_osx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = netfox_osx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -256,6 +261,7 @@
 		B3F8BAA41C833AC700F9FBEA /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				BF110B3323D9AC38007AE3EE /* AsymmetricCrypto-Bridging-Header.h */,
 				3708AD5922D4A9DD0050DB7D /* NFXURLDetailsControllerViewController.swift */,
 				B3F8BAA51C833AC700F9FBEA /* NFXDetailsController_iOS.swift */,
 				B3F8BAA61C833AC700F9FBEA /* NFXHelper_iOS.swift */,
@@ -264,6 +270,7 @@
 				B3F8BAA91C833AC700F9FBEA /* NFXListController_iOS.swift */,
 				B3F8BAAA1C833AC700F9FBEA /* NFXSettingsController_iOS.swift */,
 				B3F8BAAB1C833AC700F9FBEA /* NFXStatisticsController_iOS.swift */,
+				BF110B3123D9A8BF007AE3EE /* AsymmetricCryptoManager.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -295,7 +302,6 @@
 				D162D1AEF5191B36F6CD5F28 /* Pods-netfox_osx.debug.xcconfig */,
 				70264017B213EE78F1CD33BF /* Pods-netfox_osx.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -316,6 +322,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF110B3423D9AC38007AE3EE /* AsymmetricCrypto-Bridging-Header.h in Headers */,
 				826C4E9E1F979AB3008B440C /* NFXLoader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +331,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF110B3523D9AC38007AE3EE /* AsymmetricCrypto-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +605,7 @@
 				B3F8BA9C1C833ABC00F9FBEA /* NFXRawBodyDetailsController.swift in Sources */,
 				B3F8BAAF1C833AC700F9FBEA /* NFXListCell_iOS.swift in Sources */,
 				B3F8BA961C833ABC00F9FBEA /* NFXInfoController.swift in Sources */,
+				BF110B3223D9A8BF007AE3EE /* AsymmetricCryptoManager.swift in Sources */,
 				B3F8BAAC1C833AC700F9FBEA /* NFXDetailsController_iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -840,8 +849,10 @@
 			baseConfigurationReference = 58F6130E11A2CD43DF14A0F6 /* Pods-netfox_ios.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -863,8 +874,10 @@
 			baseConfigurationReference = 6829B948C9A264B498686F30 /* Pods-netfox_ios.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
